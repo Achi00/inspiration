@@ -20,7 +20,9 @@ const WebDetails = ({ web, webs }) => {
             </h1>
                 <div className='small-images-container'>
                     {detailsImg?.map((item, i) => (
-                        <img src={urlFor(item)}/>
+                        <img
+                        key={item._id} 
+                         src={urlFor(item)}/>
                     ))}
                 </div>
             </div>

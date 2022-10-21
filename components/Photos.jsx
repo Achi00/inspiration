@@ -8,7 +8,8 @@ const Photos = ({ photo: { image } }) => {
       <h1>photos</h1>
       <div className='gallery-card'>
           {image?.map((item, i) => (
-                        <img src={urlFor(item)}/>
+                        <img src={urlFor(item)}
+                        key={item._id}/>
                     ))}
 
         </div>

@@ -23,7 +23,8 @@ const BrandDetails = ({ art, arts }) => {
             </p>
                 <div className='small-images-container'>
                     {detailsImg?.map((item, i) => (
-                        <img src={urlFor(item)}/>
+                        <img src={urlFor(item)}
+                        key={item._id}/>
                     ))}
                 </div>
             </div>
